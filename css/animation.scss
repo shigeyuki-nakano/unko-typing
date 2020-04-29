@@ -1,0 +1,64 @@
+@mixin animation(
+    $name,
+    $duration: 1s,
+    $iteration-count: infinite,
+    $timing-function: ease,
+    $fill-mode: none
+) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $iteration-count;
+    animation-timing-function: $timing-function;
+    animation-fill-mode: $fill-mode;
+}
+
+
+@keyframes bg-anime {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -340px;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes toggle-bigger {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes count {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+@keyframes result-appear {
+    0% {
+        transform: translate(-50%, -200%);
+    }
+    100% {
+        transform: translate(-50%, -55%);
+    }
+}

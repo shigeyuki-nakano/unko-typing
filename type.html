@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/type.css">
+</head>
+<body>
+    <div class="l-wrapper">
+        <div class="l-container">
+            <div class="volume-wrap">
+                <i class="active volume-content fas fa-volume-up"></i>
+                <i class="volume-content fas fa-volume-mute"></i>
+            </div>
+            <main class="l-main">
+               <div class="l-contents">
+                   <div class="fukidashi-wrap">
+                       <div class="fukidashi">
+                           <div class="type-text-wrap">
+                               <p class="type-text"></p>
+                               <p class="type-text-guide"></p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="character-wrap type">
+                        <ul class="characters">
+                            <li class="active character-content"><img src="./imgs/mukiryoku_obasan.png" alt="無気力おばさん"></li>
+                            <li class="character-content"><img src="./imgs/gal_o_man.png" alt="ギャル男"></li>
+                            <!-- <li class="character"></li>
+                            <li class="character"></li> -->
+                        </ul>
+                   </div>
+               </div>
+               <div class="keyboard-wrap">
+                   <div class="keyboard-container">
+                       <div class="row-1 row">
+                           <span class="keyboard-btn special"></span>
+                           <span class="keyboard-btn key49">1</span>
+                           <span class="keyboard-btn key50">2</span>
+                           <span class="keyboard-btn key51">3</span>
+                           <span class="keyboard-btn key52">4</span>
+                           <span class="keyboard-btn key53">5</span>
+                           <span class="keyboard-btn key54">6</span>
+                           <span class="keyboard-btn key55">7</span>
+                           <span class="keyboard-btn key56">8</span>
+                           <span class="keyboard-btn key57">9</span>
+                           <span class="keyboard-btn key48">0</span>
+                           <span class="keyboard-btn key189">ー</span>
+                           <span class="keyboard-btn key222">～</span>
+                           <span class="keyboard-btn"></span>
+                           <span class="keyboard-btn key8 backspace">back<br>space</span>
+                       </div>
+                       <div class="row-2 row">
+                           <span class="keyboard-btn tab">tab</span>
+                           <span class="keyboard-btn key81">Q</span>
+                           <span class="keyboard-btn key87">W</span>
+                           <span class="keyboard-btn key69">E</span>
+                           <span class="keyboard-btn key82">R</span>
+                           <span class="keyboard-btn key84">T</span>
+                           <span class="keyboard-btn key89">Y</span>
+                           <span class="keyboard-btn key85">U</span>
+                           <span class="keyboard-btn key73">I</span>
+                           <span class="keyboard-btn key79">O</span>
+                           <span class="keyboard-btn key80">P</span>
+                           <span class="keyboard-btn key192">@</span>
+                           <span class="keyboard-btn key219">「</span>
+                       </div>
+                       <div class="row-3 row">
+                           <span class="keyboard-btn capslock">caps lock</span>
+                           <span class="keyboard-btn key65">A</span>
+                           <span class="keyboard-btn key83">S</span>
+                           <span class="keyboard-btn key68">D</span>
+                           <span class="keyboard-btn key70">F</span>
+                           <span class="keyboard-btn key71">G</span>
+                           <span class="keyboard-btn key72">H</span>
+                           <span class="keyboard-btn key74">J</span>
+                           <span class="keyboard-btn key75">K</span>
+                           <span class="keyboard-btn key76">L</span>
+                           <span class="keyboard-btn key187">+</span>
+                           <span class="keyboard-btn key186">*</span>
+                           <span class="keyboard-btn key221">」</span>
+                       </div>
+                       <div class="row-4 row">
+                           <span class="keyboard-btn key16 shift">shift</span>
+                           <span class="keyboard-btn key90">Z</span>
+                           <span class="keyboard-btn key88">X</span>
+                           <span class="keyboard-btn key67">C</span>
+                           <span class="keyboard-btn key86">V</span>
+                           <span class="keyboard-btn key66">B</span>
+                           <span class="keyboard-btn key78">N</span>
+                           <span class="keyboard-btn key77">M</span>
+                           <span class="keyboard-btn key188">、</span>
+                           <span class="keyboard-btn key190">。</span>
+                           <span class="keyboard-btn key191">？</span>
+                           <span class="keyboard-btn key226">￥</span>
+                           <span class="keyboard-btn shift2">shift</span>
+                        </div>
+                        <div class="row-5 row">
+                            <span class="keyboard-btn key17 special">ctrl</span>
+                            <span class="keyboard-btn special">fn</span>
+                            <span class="keyboard-btn special"></span>
+                            <span class="keyboard-btn special">alt</span>
+                            <span class="keyboard-btn special henkan">無変換</span>
+                            <span class="keyboard-btn key32 space"></span>
+                            <span class="keyboard-btn special henkan">変換</span>
+                            <span class="keyboard-btn special katakana">カタカナ<br>ひらがな<br>ローマ字</span>
+                            <span class="keyboard-btn special">alt</span>
+                            <span class="keyboard-btn special">ctrl</span>
+                        </div>
+                        <div class="yajirusi-wrap">
+                            <span class="keyboard-btn key38 yajirusi top">↑</span>
+                            <div class="bottom-wrap">
+                                <span class="keyboard-btn key37 yajirusi left">←</span>
+                                <span class="keyboard-btn key40 yajirusi bottom">↓</span>
+                                <span class="keyboard-btn key39 yajirusi right">→</span>
+                            </div>
+                        </div>
+                        <span class="keyboard-btn key13 enter">enter</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- ゲーム開始前の暗幕 -->
+        <div class="anmaku-wrap">
+            <div class="anmaku-guide">spaceキーを押してね！</div>
+            <div class="anmaku-count-wrap">
+                <!-- 一つずれているのはjsで0になったら繰り返しを
+                やめるという処理を行っているため -->
+                <div class="anmaku-count-1">GO!</div>
+                <div class="anmaku-count-2">1</div>
+                <div class="anmaku-count-3">2</div>
+                <div class="anmaku-count-4">3</div>
+            </div>
+        </div>
+
+        <div class="timer-wrap">
+            <div>
+                <span class="timer-guide">残り</span>
+                <span class="timer"></span>
+                <span class="timer-guide">秒</span>
+            </div>
+        </div>
+
+        <div class="result-wrap">
+            <div class="result-container">
+                <div class="result-contents">
+                    <div class="result-top-wrap">
+                        <div class="fukidashi-wrap">
+                            <div class="fukidashi">
+                                <div class="type-text-wrap">
+                                    <p class="result-serif"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-wrap type">
+                             <ul class="characters">
+                                 <li class="character-content result"><img src="./imgs/mukiryoku_obasan.png" alt="無気力おばさん"></li>
+                                 <li class="character-content result"><img src="./imgs/gal_o_man.png" alt="ギャル男"></li>
+                                 <!-- <li class="character"></li>
+                                 <li class="character"></li> -->
+                             </ul>
+                        </div>
+                    </div>
+                    <ul class="result-under-wrap">
+                        <li class="result-box">
+                            <div class="result-box-title">タイプ数</div>
+                            <div class="result-type result-box-num"></div>
+                        </li>
+                        <li class="result-box">
+                            <div class="result-box-title">正解数</div>
+                            <div class="result-correct result-box-num"></div>
+                        </li>
+                        <li class="result-box">
+                            <div class="result-box-title">ミス数</div>
+                            <div class="result-uncorrect result-box-num"></div>
+                        </li>
+                        <li class="result-box">
+                            <div class="result-box-title">平均タイプ数</div>
+                            <div class="result-type-average result-box-num"></div>
+                        </li>
+                        <li class="result-box">
+                            <div class="result-box-title">正解率</div>
+                            <div class="result-correct-rate result-box-num"></div>
+                        </li>
+                    </ul>
+                    <div class="result-btn-wrap">
+                        <a href="./index.html">
+                            <button class="result-exit">タイトルへ</button>
+                        </a>
+                        <a href="">
+                            <button class="result-return">もう一回やる</button>                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="l-footer">
+            &copy;thuyajino
+        </footer>
+    </div>
+
+    <script src="js/type.js"></script>
+</body>
+</html>
